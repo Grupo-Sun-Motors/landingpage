@@ -1,0 +1,268 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Suzuki GSX-8R — Produto</title>
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+  <!-- Import map (reserved for any CDN modules if needed) -->
+  <script type="importmap">
+    {
+      "imports": {}
+    }
+  </script>
+
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Header / Nav -->
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="logo" href="#" target="_blank" aria-label="Suzuki">
+        <!-- Simple text logo to keep it clean -->
+        SUZUKI
+      </a>
+
+      <nav class="nav-desktop" aria-label="Main navigation">
+        <a href="#" target="_blank">MOTOS</a>
+        <a href="#" target="_blank">PEÇAS</a>
+        <a href="#" target="_blank">CONCESSIONÁRIAS</a>
+        <a href="#" target="_blank">CONTATO</a>
+      </nav>
+
+      <div class="header-actions">
+        <button class="icon-btn search" aria-label="Buscar" title="Buscar" onclick="window.open('#', '_blank')">🔍</button>
+        <button class="icon-btn burger" aria-label="Menu" id="burgerBtn">☰</button>
+      </div>
+    </div>
+
+    <!-- Mobile menu -->
+    <div class="mobile-menu" id="mobileMenu" hidden>
+      <a href="#" target="_blank">MOTOS</a>
+      <a href="#" target="_blank">PEÇAS</a>
+      <a href="#" target="_blank">CONCESSIONÁRIAS</a>
+      <a href="#" target="_blank">CONTATO</a>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero / Product -->
+    <section class="hero">
+      <div class="hero-inner">
+        <div class="hero-left">
+          <nav class="breadcrumbs" aria-label="Breadcrumb">
+            <a href="#" target="_blank">Home</a>
+            <span>›</span>
+            <a href="#" target="_blank">Novas</a>
+            <span>›</span>
+            <a href="#" target="_blank">Suzuki Motos</a>
+          </nav>
+
+          <h1>GSX-8R</h1>
+          <p class="lead">Performance esportiva e controle preciso para quem busca agilidade sem abrir mão do conforto. Motor moderno, chassi equilibrado e design afiado.</p>
+
+          <div class="price-cta">
+            <div class="price">R$ 48.990</div>
+            <!-- Mobile-first: remains simple anchor to mobile form -->
+            <a class="btn-primary" href="#interest" target="_blank">TENHO INTERESSE</a>
+          </div>
+
+          <!-- Desktop interest form (visible on desktop, hidden on small screens) -->
+          <form class="interest-form" id="interestForm" aria-label="Formulário de interesse" novalidate>
+            <h2>TENHO INTERESSE</h2>
+
+            <div class="field-row">
+              <label for="name">Nome</label>
+              <input id="name" name="name" type="text" required placeholder="Seu nome completo">
+            </div>
+
+            <div class="field-row">
+              <label for="email">E-mail</label>
+              <input id="email" name="email" type="email" required placeholder="seu@email.com">
+            </div>
+
+            <div class="field-row">
+              <label for="phone">Telefone</label>
+              <input id="phone" name="phone" type="tel" required placeholder="(00) 00000-0000">
+            </div>
+
+            <div class="field-row split">
+              <div>
+                <label for="state">Estado</label>
+                <select id="state" name="state" required>
+                  <option value="">Selecione</option>
+                  <option>SP</option>
+                  <option>RJ</option>
+                  <option>MG</option>
+                </select>
+              </div>
+              <div>
+                <label for="city">Cidade</label>
+                <select id="city" name="city" required>
+                  <option value="">Selecione</option>
+                  <option>São Paulo</option>
+                  <option>Rio de Janeiro</option>
+                  <option>Belo Horizonte</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="field-row checkbox-row">
+              <input id="privacy" name="privacy" type="checkbox" required>
+              <label for="privacy">Aceito a política de privacidade</label>
+            </div>
+
+            <div class="field-row">
+              <button class="btn-submit" type="submit">ENVIAR</button>
+            </div>
+          </form>
+        </div>
+
+        <div class="hero-right">
+          <div class="gallery">
+            <div class="main-image">
+              <img id="currentImage" src="https://images.unsplash.com/photo-1504215680853-026ed2a45def?q=80&w=1600&auto=format&fit=crop&ixlib=rb-4.0.3&s=3c6f0f45c4b8f6a8bc3a6f0b3f7b8d7a" alt="Suzuki GSX-8R - vista frontal">
+            </div>
+
+            <div class="thumbnails" role="list">
+              <button class="thumb active" data-src="https://images.unsplash.com/photo-1504215680853-026ed2a45def?q=80&w=1600&auto=format&fit=crop&ixlib=rb-4.0.3&s=3c6f0f45c4b8f6a8bc3a6f0b3f7b8d7a" aria-label="Imagem 1"></button>
+              <button class="thumb" data-src="https://images.unsplash.com/photo-1516483638261-f4dbaf036963?q=80&w=1600&auto=format&fit=crop&ixlib=rb-4.0.3&s=b6c6a043d6a6a2a4b5d6c3c0e8c9f1a2" aria-label="Imagem 2"></button>
+              <button class="thumb" data-src="https://images.unsplash.com/photo-1528701800489-476a3b6d4a2d?q=80&w=1600&auto=format&fit=crop&ixlib=rb-4.0.3&s=0a6a9b9c5b7a9a5f6b3d9c8e2d1f3a4b" aria-label="Imagem 3"></button>
+              <button class="thumb" data-src="https://images.unsplash.com/photo-1549924231-f129b911e442?q=80&w=1600&auto=format&fit=crop&ixlib=rb-4.0.3&s=6c5e5e1f2a1b7c9d8e6f3a0b4c2d5e1f" aria-label="Imagem 4"></button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Mobile-first order: gallery first on small screens -->
+    <section class="color-select">
+      <h2>ESCOLHA A COR</h2>
+      <div class="swatches" role="list">
+        <button class="swatch" style="background:#0D47A1" aria-label="Azul" data-color="Azul"></button>
+        <button class="swatch" style="background:#212121" aria-label="Preto" data-color="Preto"></button>
+        <button class="swatch" style="background:#BDBDBD" aria-label="Prata" data-color="Prata"></button>
+      </div>
+    </section>
+
+    <section class="features-intro">
+      <h2>PRINCIPAIS CARACTERÍSTICAS</h2>
+      <p class="subtitle">Tecnologia, segurança e desempenho pensados para a pilotagem urbana e estradas sinuosas.</p>
+    </section>
+
+    <section class="features-grid">
+      <!-- Feature 1: Image left, text right (desktop) -->
+      <article class="feature">
+        <div class="feature-media">
+          <img src="https://images.unsplash.com/photo-1502877338535-766e1452684a?q=80&w=1600&auto=format&fit=crop&ixlib=rb-4.0.3&s=7efc3a9d2a69b1aeb5cee7c4a68a9a06" alt="Motor e detalhe do GSX-8R">
+        </div>
+        <div class="feature-body">
+          <h3>Motor avançado</h3>
+          <p>Motor de alta eficiência com resposta rápida, menor consumo e torque adequado para uso urbano e estrada.</p>
+        </div>
+      </article>
+
+      <!-- Feature 2: Text left, image right on desktop -->
+      <article class="feature">
+        <div class="feature-body">
+          <h3>Sistema de freios</h3>
+          <p>Freios ABS de última geração, com discos ventilados para frenagens seguras e progressivas.</p>
+        </div>
+        <div class="feature-media">
+          <img src="https://images.unsplash.com/photo-1506806732259-39c2d0268443?q=80&w=1600&auto=format&fit=crop&ixlib=rb-4.0.3&s=5f6a8b4f6d1a2a3b4c5d6e7f8a9b0c1d" alt="Freios e disco do GSX-8R">
+        </div>
+      </article>
+
+      <!-- Feature 3 -->
+      <article class="feature">
+        <div class="feature-media">
+          <img src="https://images.unsplash.com/photo-1519681393784-d120267933ba?q=80&w=1600&auto=format&fit=crop&ixlib=rb-4.0.3&s=3c5d6f7a8b9c0d1e2f3a4b5c6d7e8f9a" alt="Painel e guidão do GSX-8R">
+        </div>
+        <div class="feature-body">
+          <h3>Conectividade</h3>
+          <p>Painel digital com conectividade para smartphones, navegação e monitoramento em tempo real.</p>
+        </div>
+      </article>
+
+      <!-- Feature 4 -->
+      <article class="feature">
+        <div class="feature-body">
+          <h3>Ergonomia e suspensão</h3>
+          <p>Suspensão calibrada para conforto sem perder a esportividade; posição de pilotagem otimizada.</p>
+        </div>
+        <div class="feature-media">
+          <img src="https://images.unsplash.com/photo-1533473359331-0135ef1b58bf?q=80&w=1600&auto=format&fit=crop&ixlib=rb-4.0.3&s=ab3d4c5e6f7a8b9c0d1e2f3a4b5c6d7e" alt="Suspensão e detalhe do chassi">
+        </div>
+      </article>
+    </section>
+
+    <!-- New mobile form section (stacked fields) -->
+    <section class="mobile-interest" id="interest" aria-labelledby="interestHeading">
+      <div class="mobile-interest-inner">
+        <h2 id="interestHeading">TENHO INTERESSE</h2>
+        <form class="interest-form-stacked" id="interestFormMobile" novalidate>
+          <label for="m-name">Nome</label>
+          <input id="m-name" name="name" type="text" required placeholder="Seu nome completo">
+
+          <label for="m-email">E-mail</label>
+          <input id="m-email" name="email" type="email" required placeholder="seu@email.com">
+
+          <label for="m-phone">Telefone</label>
+          <input id="m-phone" name="phone" type="tel" required placeholder="(00) 00000-0000">
+
+          <label for="m-state">Estado</label>
+          <select id="m-state" name="state" required>
+            <option value="">Selecione</option><option>SP</option><option>RJ</option><option>MG</option>
+          </select>
+
+          <label for="m-city">Cidade</label>
+          <select id="m-city" name="city" required>
+            <option value="">Selecione</option><option>São Paulo</option><option>Rio de Janeiro</option><option>Belo Horizonte</option>
+          </select>
+
+          <div class="checkbox-row">
+            <input id="m-privacy" name="privacy" type="checkbox" required>
+            <label for="m-privacy">Aceito a política de privacidade</label>
+          </div>
+
+          <button class="btn-submit" type="submit">ENVIAR</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div class="footer-col">
+        <h4>SUZUKI</h4>
+        <a href="#" target="_blank">MOTOS</a>
+        <a href="#" target="_blank">PEÇAS</a>
+        <a href="#" target="_blank">CONCESSIONÁRIAS</a>
+      </div>
+
+      <div class="footer-col">
+        <h4>CONTATO</h4>
+        <a href="#" target="_blank">Fale conosco</a>
+        <a href="#" target="_blank">Assistência</a>
+        <a href="mailto:contato@example.com" target="_blank">contato@example.com</a>
+      </div>
+
+      <div class="footer-col">
+        <h4>REDES</h4>
+        <a href="#" target="_blank">Facebook</a>
+        <a href="#" target="_blank">Instagram</a>
+        <a href="#" target="_blank">YouTube</a>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <small>© <span id="year"></span> Suzuki — Todos os direitos reservados</small>
+    </div>
+  </footer>
+
+  <script src="app.js" type="module"></script>
+</body>
+</html>
